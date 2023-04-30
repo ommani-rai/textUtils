@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, rerum dolorum architecto molestiae recusandae
+    porro sit ad illum optio! Tempore velit laborum quis.
+    <br>
+    {{name}} is from {{place}}
+    <!-- action ma urls ko link rakhna paainxa -->
+    <form action="/myhome" method="post">
+        {% csrf_token %}
+    <!-- <form action="/myhome" method="get"> -->
+        <textarea name="ommani" id="" cols="30" rows="10" style="width: 1079px; height: 142px;"></textarea>
+        <br><br>
+        <input type="checkbox" name="removepunc">Remove Punctuations
+        <input type="checkbox" name="uppercase">UPPERCASE
+        <input type="checkbox" name="newlineremover">New Line Remover
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
